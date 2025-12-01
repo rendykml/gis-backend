@@ -8,10 +8,9 @@ import {
 
 const router = express.Router();
 
-router.get("/", controller.getLocations);
-router.post("/", controller.addLocation);
-router.put("/:id", controller.updateLocation);
-router.delete("/:id", controller.deleteLocation);
-
+router.get("/", getLocations);
+router.post("/", addLocation);
+router.put("/:id", updateLocation);
+router.delete("/:id", deleteLocation);
 
 export default router;
